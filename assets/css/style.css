@@ -1,10 +1,40 @@
+.head {
+    margin-bottom: 60px;
+} 
 
 
-body {
-    background: url("../images/background.jpg") no-repeat center fixed;
+ body, .card { 
+    background: url("../images/graveyard.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    border: none;
+     
+}  
+
+/* .game {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+} */
+
+
+.skull {
+    margin: 165px 0 0 125px;
+    max-width: 45%;
+   
 }
+
+.stone {
+    text-align: center;
+    left: 10px;
+    top: 185px;
+    margin: auto;
+
+}
+
+

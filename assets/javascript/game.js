@@ -56,6 +56,8 @@ var startGame = function() {
     }};
 
     guessFilmText.textContent = film;
+    
+    
 
     document.onkeyup = function(event) {
         if (gameStarted === true) {

@@ -15,64 +15,99 @@
 </head>
 
 <body>
+
+
+
+
+
+
+
+
+
     <container class="wrapper">
-        <div>
-                <h1>Guess That Horror Movie</h1>
-                <h2>Press Any Key to Get Started!</h2>
-                <section>
-                    <p>Wins: <span id="wins">0</span></p>
-                    <p>Losses: <span id="losses">0</span></p>
-                </section> 
-                <section>
-                    <h3>The Film Title is: </h3>
-                    <div id="guessFilm"></div>
-                    <p>Guesses Left: <span id="lives">6</span></p>
-                    <p>Incorrect Guesses: <span id="userGuess"></span></p>
-                </section>
-                <section>
-                    <p><span id="message"></span></p>
-                </section>
-            </div>
-    </container>
+        <div class="row">
+            <div class="col-lg">
+                <div class="row">
 
-    <!-- <div id="wordGuessWrapper">
-        <div class="container">
-            <div class="header">
-                <img src="assets/images/blood.png" class="card-img" alt="blood splatter">
-            </div>
-
-
-        <div class="container content">
-            <div class="row">
-                <div class="col-md">
-                    <div class="row">
-                        <div class="col-md">
-                            <h1>Press Any Key to Get Started!</h1>
-                        </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                             <div id="filmChoice"></div>
-                             <p id="wins"></p>
-                             <p id="losses"></p>
-                             Lives Left: <span id="guessesLeft"></span>
-                            <img src="assets/images/roundTombstone.png" alt="Large Tombstone">
-                        </div>
-                        <div class="col-md-6">
-                            <div id="userGuess"></div>
-                            <img src="assets/images/tallGravestone.png" alt="Tall Tombstone">
-                        </div>
+                    <div class="col-lg-5 offset-1 card flex-grow-1">
+                        <img class="card-img" src="assets/images/gravestone.png" alt="left gravestone">
+                            <div class="card-img-overlay justify-content-center">
+                                <h1>Guess That Horror Movie</h1>
+                            </div>
+                            <div class="card-img-overlay justify-content-center">
+                                <img class="skull" src="assets/images/skull.png" alt="skull">
+                                <p>Guesses Left: <span id="lives">6</span></p>
+                            </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md">
-                            <img src="assets/images/grassGreen.png">
-                        </div>
+
+                    <div class="col-lg-5 offset-1 card flex-grow-1">
+                        <img class="card-img" src="assets/images/gravestone.png" alt="right gravestone">
+                            <div class="card-img-overlay justify-content-center">
+                                <h2>Press Any Key to Get Started</h2>
+                                <div id="guessFilm"></div>
+                            </div>
+                            <div class="card-img-overlay justify-content-center">
+                                <p>Wrong Guesses: <span id="userGuess"></span></p> 
+                            </div>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg card flex-grow-1">
+                        <img class="card-img" src="assets/images/grassfooter.png" alt="grass">
+                        <div class="card-img-overlay justify-content-center">
+                            <img class="sign" src="assets/images/sign.png">                            
+                        </div>
+                        <div class="card-img-overlay justify-content-center">
+                                <p>Wins: <span id="wins">0</span></p>
+                                <p>Losses: <span id="losses">0</span></p> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </container>
+
+ <!-- <container class="wrapper">
+    <div class="row">
+        <div class="col-lg">
+                <div class="card flex-grow-1">
+                        <img class="card-img" src="assets/images/graves and grass.png" alt="graves">               
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 left title card-img-overlay">
+                            <h1>Guess That Horror Movie</h1>
+                        </div>
+                        <div class="col-md-6 right rules card-img-overlay">
+                            <h2>Press Any Key to Get Started!</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 left leftImg card-img-overlay">
+                            <img src="assets/images/skull.png" class="graveImg" alt="Skull">
+                        </div>
+                        <div class="col-md-6 right card-img-overlay">
+                            <div id="guessFilm"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center card-img-overlay">
+                        <div class="col-md-6 left"> -->
+                            <!-- <p>Guesses Left: <span id="lives">6</span></p>
+                        </div>
+                        <div class="col-md-6 right card-img-overlay">
+                            <p>Incorrect Guesses: <span id="userGuess"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md score card-img-overlay">
+                            <p>Wins: <span id="wins">0</span></p>
+                            <p>Losses: <span id="losses">0</span></p>
+                        </div>
+                    </div>
+                            <p><span id="message"></span></p>     
+                </div>
+        </div>
     </div>
-</div> -->
+ </container> -->
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
