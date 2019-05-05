@@ -67,7 +67,7 @@ var startGame = function() {
         film.push("_"); 
     }};
 
-    guessFilmText.textContent = film
+    guessFilmText.textContent = film;
     
     
 
@@ -81,7 +81,7 @@ var startGame = function() {
                         film[j] = userGuess;
                         guessFilmText.textContent = film;
 
-                        var winning = film.join("");
+                        var winning = film.join(" ");
 
                         if (winning === upperCaseFilm) {
                             wins++;
