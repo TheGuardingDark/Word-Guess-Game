@@ -56,7 +56,7 @@ var startGame = function() {
     var randomFilm = films[Math.floor(Math.random() * films.length)];
     var upperCaseFilm = randomFilm.toUpperCase();
     var currentFilm = Array.from(upperCaseFilm);
-
+    
 
    for (i = 0; i < currentFilm.length; i++) {
     
@@ -81,7 +81,9 @@ var startGame = function() {
                         film[j] = userGuess;
                         guessFilmText.textContent = film;
 
-                        var winning = film.join(" ");
+                        var winning = film.join("");
+                        // console.log(winning);
+
 
                         if (winning === upperCaseFilm) {
                             wins++;
