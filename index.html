@@ -4,112 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess Game</title>
-    <link rel="reset" href="assets/css/reset.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <title>Liv Heller</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
-<body>
+    <body>
 
-
-
-
-
-
-
-
-
-    <container class="wrapper">
+    <div class="container flex-grow-1">
         <div class="row">
-            <div class="col-lg">
+            <div class="col-12">
                 <div class="row">
-
-                    <div class="col-lg-5 offset-1 card flex-grow-1">
-                        <img class="card-img" src="assets/images/gravestone.png" alt="left gravestone">
-                            <div class="card-img-overlay justify-content-center">
-                                <h1>Guess That Horror Movie</h1>
-                            </div>
-                            <div class="card-img-overlay justify-content-center">
-                                <img class="skull" src="assets/images/skull.png" alt="skull">
-                                <p>Guesses Left: <span id="lives">6</span></p>
-                            </div>
-                    </div>
-
-                    <div class="col-lg-5 offset-1 card flex-grow-1">
-                        <img class="card-img" src="assets/images/gravestone.png" alt="right gravestone">
-                            <div class="card-img-overlay justify-content-center">
-                                <h2>Press Any Key to Get Started</h2>
-                                <div id="guessFilm"></div>
-                            </div>
-                            <div class="card-img-overlay justify-content-center">
-                                <p>Wrong Guesses: <span id="userGuess"></span></p> 
-                            </div>
+                    <div class="card bg dark col-lg head">
+                        <p></p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg card flex-grow-1">
-                        <img class="card-img" src="assets/images/grassfooter.png" alt="grass">
-                        <div class="card-img-overlay justify-content-center">
-                            <img class="sign" src="assets/images/sign.png">                            
-                        </div>
-                        <div class="card-img-overlay justify-content-center">
+        <div class="row justify-content-center">
+            <div class="card bg-dark text-white col-sm-5">
+                    <img src="assets/images/gravestone.png" class="card-img" alt="gravestone">
+                    <div class="card-img-overlay">
+                      <h3 class="card-title">Guess That Horror</h3>
+                      <h4>Movie</h4>
+                                <p>Guesses Left: <span id="lives">6</span></p>
+                      <img src="assets/images/skull.png" class="card-img-overlay skull" alt="skull">
                                 <p>Wins: <span id="wins">0</span></p>
                                 <p>Losses: <span id="losses">0</span></p> 
-                        </div>
                     </div>
-                </div>
+            </div>
+                  <div class="card bg-dark text-white col-sm-5">
+                        <img src="assets/images/gravestone.png" class="card-img" alt="gravestone">
+                        <div class="card-img-overlay stone">
+                            <div id="rightStone">
+                                <h5 class="card-title">Press Any Key To</h5>
+                                <h6>Start!</h6>
+                            </div>
+                                <div id="guessFilm"></div>
+                                <p>Wrong Guesses: <span id="userGuess"></span></p>
+                                <p><span id="message"></span></p>
+                          
+                        </div>
+                  </div>
             </div>
         </div>
-    </container>
-
- <!-- <container class="wrapper">
-    <div class="row">
-        <div class="col-lg">
-                <div class="card flex-grow-1">
-                        <img class="card-img" src="assets/images/graves and grass.png" alt="graves">               
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 left title card-img-overlay">
-                            <h1>Guess That Horror Movie</h1>
-                        </div>
-                        <div class="col-md-6 right rules card-img-overlay">
-                            <h2>Press Any Key to Get Started!</h2>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 left leftImg card-img-overlay">
-                            <img src="assets/images/skull.png" class="graveImg" alt="Skull">
-                        </div>
-                        <div class="col-md-6 right card-img-overlay">
-                            <div id="guessFilm"></div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center card-img-overlay">
-                        <div class="col-md-6 left"> -->
-                            <!-- <p>Guesses Left: <span id="lives">6</span></p>
-                        </div>
-                        <div class="col-md-6 right card-img-overlay">
-                            <p>Incorrect Guesses: <span id="userGuess"></span></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md score card-img-overlay">
-                            <p>Wins: <span id="wins">0</span></p>
-                            <p>Losses: <span id="losses">0</span></p>
-                        </div>
-                    </div>
-                            <p><span id="message"></span></p>     
-                </div>
-        </div>
     </div>
- </container> -->
+</div>
+
+
+<footer> <img src="assets/images/grassfooter.png" class="card-img-overlay"></footer>
+
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
+    </body>
 </html>
-

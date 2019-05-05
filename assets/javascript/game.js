@@ -41,6 +41,10 @@ var startGame = function() {
     film = [];
 
 
+
+    // document.getElementById("rightStone").innerHTML = "The Film Title is:";
+
+
     var randomFilm = films[Math.floor(Math.random() * films.length)];
     var upperCaseFilm = randomFilm.toUpperCase();
     var currentFilm = Array.from(upperCaseFilm);
@@ -74,7 +78,7 @@ var startGame = function() {
                         if (winning === upperCaseFilm) {
                             wins++;
                             winsText.textContent = wins;
-                            messageText.textContent = "You Win!";
+                            // messageText.textContent = "You Win!";
                             gameStarted = false;
                         }}
     
@@ -86,7 +90,7 @@ var startGame = function() {
                         if (lives < 1) {
                             losses++;
                             lossesText.textContent = losses;
-                            messageText.textContent = "You Lose";
+                            // messageText.textContent = "You Lose";
                             guessFilmText.textContent = upperCaseFilm;
                             gameStarted = false;
                         }

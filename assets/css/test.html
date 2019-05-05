@@ -27,17 +27,25 @@
             <div class="card bg-dark text-white col-sm-5">
                     <img src="../images/gravestone.png" class="card-img" alt="gravestone">
                     <div class="card-img-overlay">
-                      <h5 class="card-title">Guess That Horror Movie</h5>
-                     <h6><img src="../images/skull.png" class="card-img-overlay skull" alt="skull"></h6>
-                      <p></p>
+                      <h3 class="card-title">Guess That Horror</h3>
+                      <h4>Movie</h4>
+                                <p>Guesses Left: <span id="lives">6</span></p>
+                      <img src="../images/skull.png" class="card-img-overlay skull" alt="skull">
+                                <p>Wins: <span id="wins">0</span></p>
+                                <p>Losses: <span id="losses">0</span></p> 
                     </div>
             </div>
                   <div class="card bg-dark text-white col-sm-5">
                         <img src="../images/gravestone.png" class="card-img" alt="gravestone">
                         <div class="card-img-overlay stone">
-                          <h5 class="card-title">Guess That Horror Movie</h5>
-                          <p class="card-text">blah blah blah.</p>
-                          <p class="card-text">Wins and Losses</p>
+                            <div id="rightStone">
+                                <h5 class="card-title">Press Any Key To</h5>
+                                <h6>Start!</h6>
+                            </div>
+                                <div id="guessFilm"></div>
+                                <p>Wrong Guesses: <span id="userGuess"></span></p>
+                                <p><span id="message"></span></p>
+                          
                         </div>
                   </div>
             </div>
@@ -48,5 +56,7 @@
 
 <footer> <img src="../images/grassfooter.png" class="card-img-overlay"></footer>
 
+
+<script type="text/javascript" src="../javascript/game.js"></script>
     </body>
 </html>
