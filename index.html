@@ -27,12 +27,18 @@
             <div class="card bg-dark text-white col-sm-5">
                     <img src="assets/images/gravestone.png" class="card-img" alt="gravestone">
                     <div class="card-img-overlay">
-                      <h3 class="card-title">Guess That Horror</h3>
-                      <h4>Movie</h4>
-                                <p>Guesses Left: <span id="lives">6</span></p>
-                      <img src="assets/images/skull.png" class="card-img-overlay skull" alt="skull">
-                                <p>Wins: <span id="wins">0</span></p>
-                                <p>Losses: <span id="losses">0</span></p> 
+                        <div id="title">
+                                <h3 class="card-title">Guess That Horror</h3>
+                                <h4>Movie</h4>
+                        </div>
+                            <div id="skull">
+                                <img src="assets/images/skull.png" class="card-img-overlay skull" alt="skull">
+                            </div>
+                                <div id="leftStone">
+                                    <p>Guesses Left: <span id="lives">6</span></p>
+                                    <p>Wins: <span id="wins">0</span></p>
+                                    <p>Losses: <span id="losses">0</span></p> 
+                                </div>
                     </div>
             </div>
                   <div class="card bg-dark text-white col-sm-5">
@@ -43,8 +49,10 @@
                                 <h6>Start!</h6>
                             </div>
                                 <div id="guessFilm"></div>
-                                <p>Wrong Guesses: <span id="userGuess"></span></p>
-                                <p><span id="message"></span></p>
+                                <div id="guess">
+                                    <p>Wrong Guesses: <span id="userGuess"></span></p>
+                                </div>
+                                    <p><span id="message"></span></p>
                           
                         </div>
                   </div>

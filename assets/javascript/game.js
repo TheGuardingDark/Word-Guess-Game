@@ -15,6 +15,9 @@ var lossesText = document.getElementById("losses");
 var winsText = document.getElementById("wins");
 var messageText = document.getElementById("message");
 
+document.getElementById("leftStone").style.display = 'none';
+document.getElementById("guess").style.display = 'none';
+
 
 
 
@@ -42,7 +45,12 @@ var startGame = function() {
 
 
 
-    // document.getElementById("rightStone").innerHTML = "The Film Title is:";
+    document.getElementById("rightStone").innerHTML = "The Film Title is:";
+    document.getElementById("skull").style.display = 'none';
+    document.getElementById("title").style.display = 'none';
+    document.getElementById("leftStone").style.display = 'block';
+    document.getElementById("guess").style.display = 'block';
+
 
 
     var randomFilm = films[Math.floor(Math.random() * films.length)];
@@ -59,7 +67,7 @@ var startGame = function() {
         film.push("_"); 
     }};
 
-    guessFilmText.textContent = film;
+    guessFilmText.textContent = film
     
     
 
