@@ -61,13 +61,13 @@ var startGame = function() {
    for (i = 0; i < currentFilm.length; i++) {
     
     if (currentFilm[i] === " ") {
-        film.push(" "); 
+        film.push("&nbsp;"); 
 
     } else {
         film.push("_"); 
     }};
 
-    guessFilmText.textContent = film;
+    guessFilmText.innerHTML= film.join(' ');
     
     
 
@@ -79,7 +79,7 @@ var startGame = function() {
             for (var j = 0; j < currentFilm.length; j++) {
                 if (currentFilm[j] === userGuess) {
                         film[j] = userGuess;
-                        guessFilmText.textContent = film;
+                        guessFilmText.innerHTML = film.join(" ");
 
                         var winning = film.join("");
                         // console.log(winning);
@@ -89,6 +89,8 @@ var startGame = function() {
                             wins++;
                             winsText.textContent = wins;
                             // messageText.textContent = "You Win!";
+                            // the line below is black magic
+                            guessFilmText.textContent = upperCaseFilm;
                             gameStarted = false;
                         }}
     
@@ -112,7 +114,7 @@ var startGame = function() {
                 randomFilm = [];
                 upperCaseFilm = [];
                 currentFilm = [];
-                film = []
+                film = [];
                 guessFilmText.textContent = film;
                 wrongGuesses = [];
                 userGuessText.textContent = wrongGuesses;
