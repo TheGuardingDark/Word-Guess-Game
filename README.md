@@ -8,6 +8,8 @@ Game Functionality
 
 ### Deployed Link: https://theguardingdark.github.io/Word-Guess-Game/
 
+(Not currently mobile friendly)
+
 Upon loading, players are presented with a simple graveyard featuring two headstones. One headstone declares the game title and a skull image while the other displays the instructions "Press Any Key to Get Started". Once a key is pressed the game will begin.
 
 A random Horror film title is generated and replaces the headstone instructions with the line "The film title is:" and a series of underscores separated by commas to indicate each letter of the title and spaces to indicate each space within the film name. Under this is the line "Wrong Guesses:". The content on the first headstone is replaced with lines indicating Guesses Left: 6, Wins: 0, and Losses: 0.
